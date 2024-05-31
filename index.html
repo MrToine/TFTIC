@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h3 {
+            margin-left: 50px;
+            max-width: 130px;
+            color: #00ab00;
+            border-right: 5px solid orange;
+            border-bottom: 1px solid orange;
+        }
+        h3::before {
+            content: '¤ ';
+        }
+        h5 {
+            max-width: 130px;
+            padding-left: 5px;
+            margin: -18px 0 10px 100px;
+            color: orange;
+            border-left: 5px solid #00ab00;
+            border-bottom: 1px solid #00ab00;
+        }
+    </style>
+</head>
+<body>
+    <h3>Exercice 1</h3>
+    <h5>Les listes</h5>
+    <ul>
+        <li>L'île mestérieuse</li>
+        <li>Le tour du monde en 80 jours</li>
+        <ol>
+            <li>Pileas Fogg</li>
+            <li>Jean Passepartout</li>
+            <ul>
+                <li>Londres</li>
+                <li>Suez</li>
+                <li>Bombay</li>
+            </ul>
+            <li>Fix</li>
+        </ol>
+        <li>Le chêateau des Carpathes</li>
+    </ul>
+    <hr />
+    <h3>Exercice 2</h3>
+    <h5>Les tableaux</h5>
+    <table border="1" width="500">
+        <tr>
+            <td>Contenu de la cellule</td>
+            <td>Contenu de la cellule</td>
+        </tr>
+        <tr>
+            <td>Contenu de la Cellule</td>
+            <td>Contenu de la Cellule</td>
+        </tr>
+    </table>
+    <hr>
+    <h3>Exercice 3</h3>
+    <h5>Les colspans</h5>
+    <table border="1" width="80%">
+        <td colspan="4" bgcolor="#FFCEC3">Contenu de la cellule</td>
+        <tr>
+            <td>Contenu de la cellule</td>
+            <td>Contenu de la cellule</td>
+            <td>Contenu de la cellule</td>
+            <td>Contenu de la cellule</td>
+        </tr>
+        <tr>
+            <td>Contenu de la Cellule</td>
+            <td>Contenu de la Cellule</td>
+            <td>Contenu de la cellule</td>
+            <td>Contenu de la cellule</td>
+        </tr>
+    </table>
+    <hr />
+    <h3>Exercice 4</h3>
+    <h5>Les rowspans</h5>
+    <table border="1" width="80%">
+        <tr>
+            <td rowspan="3" bgcolor="#FFCEC3">Contenu de la cellule</td>
+            <td>Contenu de la cellule</td>
+            <td>Contenu de la cellule</td>
+            <td>Contenu de la cellule</td>
+        </tr>
+        <tr>
+            <td>Contenu de la Cellule</td>
+            <td>Contenu de la cellule</td>
+            <td>Contenu de la cellule</td>
+        </tr>
+        <tr>
+            <td>Contenu de la Cellule</td>
+            <td>Contenu de la cellule</td>
+            <td>Contenu de la cellule</td>
+        </tr>
+        <tr>
+            <td>Contenu de la cellule</td>
+            <td>Contenu de la Cellule</td>
+            <td>Contenu de la cellule</td>
+            <td>Contenu de la cellule</td>
+        </tr>
+    </table>
+    <hr />
+    <h3>Exercice 5</h3>
+    <h5>Les tableaux avancés</h5>
+    <table border="1" width="70%">
+        <tr>
+            <thead>
+                <th colspan="2">Titre</th>
+                <th>Sujets</th>
+                <th width="50%">Messages</th>
+                <th>Dernier message</th>
+            </thead>
+        </tr>
+        <tr>
+            <tbody>
+                <td>#1</td>
+                <td>Ligne 1</td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tbody>
+        </tr>
+        <tr>
+            <tbody>
+                <td>#2</td>
+                <td>Ligne 2</td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tbody>
+        </tr>
+    </table>
+</body>
+</html>
