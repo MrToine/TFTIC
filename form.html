@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulaire</title>
+    <style>
+        body {
+            background-image: url('img/bg.png');
+            background-repeat: repeat;
+        }
+        section {
+            background-color: rgb(200, 217, 255);
+            border: 1px solid rgb(62, 123, 255);
+            border-radius: 2px;
+            box-shadow: 2px 2px 5px rgb(44, 44, 44);
+            padding: 15px;
+            margin: 200px auto;
+            width: 600px;
+        }
+        legend {
+            font-size: 22pt;
+            font-family: Arial;
+            color: steelblue;
+            margin-bottom: 20px;
+        }
+        input {
+            display: block;
+            margin-bottom: 15px;
+        }
+        label {
+            border-left: 2px solid sandybrown;
+            padding-left: 5px;
+            font-weight: 600;
+        }
+
+        input[type="text"], input[type="date"], input[type="email"], input[type="url"] {
+            width: 250px;
+            padding: 5px;
+            border-radius: 3px;
+            border: 1px solid darkslategrey;
+            font-size: 1.1rem;
+        }
+
+        input:invalid {
+            border-left: 3px solid;
+            border-right: none;
+            border-top: none;
+            border-bottom: none;
+            border-color: red;
+            /*box-shadow: 0px 0px 5px red;*/
+        }
+
+        input:valid {
+            border-color: green;
+            background-color: rgb(225, 255, 225);
+            /*box-shadow: 0px 0px 5px red;*/
+        }
+
+        input[type="submit"] {
+            border: 1px solid rgb(95, 175, 95);
+            color:rgb(215, 248, 215);
+            background-color: rgb(101, 206, 101);
+            width: 150px;
+            margin: auto;
+            padding: 10px;
+            border-radius: 2px;
+            background-color: none;
+            cursor: pointer;
+        }
+
+        input[type="submit"]:hover {
+            border: 1px solid green;
+            color:rgb(215, 248, 215);
+            background-color: rgb(95, 175, 95);
+        }
+
+        .box {
+            display: inline-block;
+            margin: 0 10px;
+        }
+    </style>
+</head>
+<body>
+    <section>
+        <legend>Inscrivez-vous</legend>
+        <form action="" method="post">
+            <div class="box">
+                <label for="username">Votre Nom : </label>
+                <input type="text" id="username" name="username" placeholder="Entrez votre nom" required>
+
+                <label for="web">Votre site web : </label>
+                <input type="url" id="web" name="web" placeholder="Indiquez votre site web" required>
+
+                <label for="mail">Votre email : </label>
+                <input type="email" id="mail" name="mail" placeholder="Un email ?" required>
+            </div>
+
+            <div class="box">
+                <label for="week">Semaine : </label>
+                <input type="date" id="week" name="week" placeholder="Entrez votre nom" required>
+
+                <label for="suggest">Remarque : </label>
+                <input type="text" id="suggest" name="suggesr" placeholder="Une suggestion ?" required>
+
+                <label for="inscription">Inscription : </label>
+                <input type="text" id="inscription" name="inscription" placeholder="kiloukoi.be" readonly>
+
+            </div>
+
+            <input type="submit" value="Envoyer">
+        </form>
+    </section>
+    
+</body>
+</html>
