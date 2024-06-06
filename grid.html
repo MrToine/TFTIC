@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid html</title>
+    <style>
+        .row {
+            display: flex;
+            flex-wrap: wrap;
+            margin-top: 30px;
+        }
+
+        .c1-2 {
+            flex: 4;
+            border: 1px solid red;
+            color: red;
+        }
+        .c1 {
+            border: 1px solid red;
+        }
+        .c1-4 {
+            border: 1px solid red;
+            flex: 2;
+        }
+    </style>
+</head>
+<body>
+    <div class="row">
+        <div class="c1-2">
+            coucou
+        </div>
+        <div class="c1">Hello</div>
+        <div class="c1">Hello</div>
+        <div class="c1-2">Hello</div>
+    </div>
+
+    <div class="row">
+        <div class="c1-4">
+            coucou
+        </div>
+        <div class="c1-4">Hello</div>
+        <div class="c1-4">Hello</div>
+        <div class="c1-4">Hello</div>
+    </div>
+</body>
+</html>
