@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox 3</title>
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            background-color: #bbbbbb;
+            margin: 0;
+            height: 100vh;
+        }
+
+        header, article, aside, nav, footer {
+            padding: 10px;
+            margin: 10px;
+            border-radius: 10px;
+        }
+
+        header {
+            background-color: rgb(241, 190, 93);
+            height: 5vh;
+        }
+
+        section {
+            height: 80vh;
+        }
+        
+        article {
+            background-color: rgb(219, 241, 93);
+        }
+        
+        nav {
+            background-color: rgb(120, 159, 231);
+        }
+        
+        aside {
+            background-color: rgb(120, 159, 231);
+        }
+        
+        footer {
+            background-color: rgb(220, 231, 120);
+            height: 5vh;
+        }
+
+        @media (max-width: 640px) {
+            section {
+                display: flex;
+                flex-direction: column;
+            }
+
+            article {
+                flex: 3;
+            }
+
+            aside {
+                flex: 1;
+            }
+
+            nav {
+                flex: 1;
+                order: -1;
+            }
+        }
+
+        @media (min-width: 640px) {
+            section {
+                display: flex;
+            }
+
+            article {
+                flex: 3;
+            }
+
+            aside {
+                flex: 1;
+            }
+
+            nav {
+                flex: 1;
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <header>Entête de page</header>
+    <section>
+        <article>Article</article>
+        <aside>Infos complémentaires</aside>
+        <nav>Menu</nav>
+    </section>
+    <footer>Pied de page</footer>
+</body>
+</html>
